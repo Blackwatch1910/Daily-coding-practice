@@ -26,3 +26,15 @@ const frequency = () => {
 }
 
 frequency();
+
+// freq array using plain js
+freq = {};
+
+    for (const item of arr) {
+        if (item in freq)
+            freq[item] += 1;
+        else
+            freq[item] = 1;
+    }
+
+    const newArr = Object.values(freq);
